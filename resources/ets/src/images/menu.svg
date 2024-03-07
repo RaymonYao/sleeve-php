@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/menu</title>
+    <g id="icons/menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" fill="#333333" x="4" y="6" width="24" height="2" rx="0.5"></rect>
+        <rect id="矩形备份" fill="#333333" x="4" y="15" width="24" height="2" rx="0.5"></rect>
+        <rect id="矩形备份-2" fill="#333333" x="4" y="24" width="24" height="2" rx="0.5"></rect>
+    </g>
+</svg>

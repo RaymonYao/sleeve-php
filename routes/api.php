@@ -9,3 +9,4 @@ $router->get('/banner/name/{name}', 'BannerController@getBanner');
 $router->get('category/grid/all', 'CategoryController@getCategory');
 $router->get('/activity/name/{name}', 'ActivityController@getActivity');
 $router->get('/theme/name/{name}/with_spu', 'SpuController@getSpuListByTheme');
+$router->get('/spu/latest', 'SpuController@getLatestSpu');

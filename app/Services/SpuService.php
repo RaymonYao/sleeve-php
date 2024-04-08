@@ -21,4 +21,18 @@ class SpuService
             'spu_list' => SpuModel::where('theme_id', $theme->id)->get()
         ];
     }
+
+
+    public function getLatestSpu($params)
+    {
+        $spuTotal = SpuModel::count();
+//        $spuList = SpuModel::offset($params['start'])->limit($params['count'])->get();
+        return [
+            'total' => $spuTotal,
+            'count' => $params['count'],
+            'page' => $params['start'],
+            'total_page' => $spuTotal / $params['count'],
+            'items' => SpuModel::offset($params['start'])->limit($params['count'])->get()
+        ];
+    }
 }

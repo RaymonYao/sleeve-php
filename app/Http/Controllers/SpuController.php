@@ -32,4 +32,12 @@ class SpuController extends Controller
             'data' => $this->spuService->getSpuListByTheme(pathinfo(pathinfo(request()->path())['dirname'])['basename'])
         ]);
     }
+
+    public function getLatestSpu(): JsonResponse
+    {
+        return response()->json([
+            'code' => static::SUCCESS,
+            'data' => $this->spuService->getLatestSpu(request()->input())
+        ]);
+    }
 }
